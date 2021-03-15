@@ -2,7 +2,7 @@ import React from "react";
 import { Field, ErrorMessage } from "formik";
 import TextError from "../../TextError/TextError";
 
-function InputField(props) {
+function TextArea(props) {
   const { label, name, ...rest } = props;
 
   return (
@@ -24,4 +24,4 @@ function InputField(props) {
   );
 }
 
-export default InputField;
+export default TextArea;
