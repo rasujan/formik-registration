@@ -1,5 +1,6 @@
 import React from "react";
 import { Field, ErrorMessage } from "formik";
+import TextError from "../../TextError/TextError";
 
 function InputField(props) {
   const { label, name, options, ...rest } = props;
@@ -26,14 +27,7 @@ function InputField(props) {
             );
           })}
         </Field>
-        <ErrorMessage
-          name={name}
-          render={(msg) => (
-            <div className="my-2 px-2 py-2 block rounded-lg bg-red-100 text-red-600">
-              {msg}
-            </div>
-          )}
-        />
+        <ErrorMessage name={name} component={TextError} />
       </div>
     </div>
   );

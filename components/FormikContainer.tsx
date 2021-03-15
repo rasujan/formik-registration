@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import FormikControl from "./FormikControl";
 function FormikContainer() {
   const genderList = [
-    { key: "Select an option", value: "" },
+    { key: "Select an option", value: ""},
     { key: "Male", value: "male" },
     { key: "Female", value: "female" },
     { key: "Other", value: "other" },
